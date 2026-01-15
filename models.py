@@ -23,17 +23,17 @@ class Pet(db.Model):
     house_trained = db.Column('House Trained', db.String())
     description = db.Column('Description', db.Text)
 
-def __repr__(self):
-    return f'''<Pet (Name: {self.name}
-            Age: {self.age}
-            breed: {self.breed}
-            color: {self.color}
-            size: {self.size}
-            weight: {self.weight}
-            url: {self.url}
-            url tag: {self.url_tag}>
-            pet type: {self.pet_type}>
-            gender: {self.gender}
-            spay: {self.spay}
-            house_trained: {self.house_trained}
-            description: {self.description})>'''
+    def __repr__(self):
+        return f'''<Pet (Name: {self.name}
+                Age: {self.age}
+                breed: {self.breed}
+                color: {self.color}
+                size: {self.size}
+                weight: {self.weight}
+                url: {self.url}
+                url tag: {self.url_tag}>
+                pet type: {self.pet_type}>
+                gender: {self.gender}
+                spay: {self.spay}
+                house_trained: {self.house_trained}
+                description: {self.description})>'''

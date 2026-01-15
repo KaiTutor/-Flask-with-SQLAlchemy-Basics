@@ -8,7 +8,7 @@ def index():
 
 @app.route('/add_pet', methods=['GET', 'POST'])
 def add_pet():
-    if request.form:
+    if request.method == 'POST':
         new_pet = Pet(name=request.form['name'], age=request.form['age'],
                       breed=request.form['breed'], color=request.form['color'],
                       size = request.form['size'], weight = request.form['weight'],
