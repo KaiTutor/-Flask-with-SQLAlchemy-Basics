@@ -6,7 +6,7 @@ from models import db, Pet, app
 def index():
     return render_template('index.html')
 
-@app.route('/add-pet', methods=['GET', 'POST'])
+@app.route('/add_pet', methods=['GET', 'POST'])
 def add_pet():
     if request.form:
         new_pet = Pet(name=request.form['name'], age=request.form['age'],
